@@ -43,5 +43,29 @@ namespace TesteData.Models
             //Assert
             Assert.Equal(test, f.Peso);
         }
+
+        [Fact]
+        public void TestePropriedadeFerramentaValor()
+        {
+            //arrange
+            Ferramenta f = new Ferramenta();
+            //Act
+            f.Valor = 10.5252222525252525252M;
+            decimal teste = 10.5252222525252525252M;
+            //Assert
+            Assert.Equal(teste, f.Valor);
+        }
+
+        [Fact]
+        public void TestePropriedadeFerramentaID()
+        {
+            //arrange
+            Ferramenta f = new Ferramenta();
+            //Act
+            f.Id = 5;
+            decimal teste = 5;
+            //Assert
+            Assert.Equal(teste, f.Id);
+        }
     }
 }
